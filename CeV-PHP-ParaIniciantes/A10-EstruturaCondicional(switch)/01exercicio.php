@@ -8,20 +8,23 @@
 <body>
 <div>
     <?php
-        $a = isset($_GET["ano"])?$_GET["ano"]:1900;
-        $i = date("Y") - $a;
-        echo "Você nasceu em $a e terá $i anos<br/><br/>";
-        if($i>=18){
-            $v = "PODE VOTAR";
-            $d = "PODE DIRIJIR";
+        $n = isset($_GET["num"])?$_GET["num"]:0;
+        $o = isset($_GET["oper"])?$_GET["oper"]:1;
+        switch ($o) {
+            case 1:
+                $r = $n*2;
+                break;
+            case 2:
+                $r = $n**3;
+                break;
+            case 3:
+                $r = sqrt($n); //  $r = $n ^ (1/2) ou $r = $n ^ 0.5
+                break;
         }
-        else{
-            $v = "NÃO PODE VOTAR";
-            $d = "NÃO PODE DIRIJIR";
-        }
-        echo "Com essa idade você $v e $d";
+
+        echo "O resultado da operação solicita foi <span class='foco'>$r              </span";
     ?>
-    <a href="01exercicio.html">voltar</a>
+    <a href="01exercicio.html"><span class=botao>voltar</span></a>
 </div>
 </body>
 </html>
