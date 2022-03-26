@@ -22,9 +22,10 @@
                 break;
         }
 
-        echo "O resultado da operação solicita foi <span class='foco'>$r              </span";
+        echo "O resultado da operação solicita foi <span class='foco'>$r</span";
     ?>
-    <a href="01exercicio.html"><span class=botao>voltar</span></a>
+    <br/>
+    <a href="01exercicio.html"><span class="botao">voltar</span></a>
 </div>
 </body>
 </html>
