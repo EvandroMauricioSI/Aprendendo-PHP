@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="_css/estilo.css"/>
+  <meta charset="UTF-8"/>
+  <title>Curso de PHP - CursoemVideo.com</title>
+</head>
+<body>
+<div>
+    <?php
+        $produto = "leite";
+        $preco = 4.5;
+        printf("O %s custa R$ %.2f", $produto, $preco);
+    ?>
+
+    <p><a href="javascript:history.go(-1)">VOLTAR</a></p>
+    
+</div>
+</body>
+</html>
+ 
